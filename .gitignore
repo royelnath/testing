@@ -1,0 +1,78 @@
+# ==========================================
+# Root / System / OS Files
+# ==========================================
+.DS_Store
+.DS_Store?
+$_ラクタ
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+*.swo
+
+# ==========================================
+# Client (Frontend) Specific
+# ==========================================
+# Dependencies
+client/node_modules/
+
+# Production Build Output
+client/dist/
+client/build/
+client/.next/
+client/out/
+
+# Local configuration files / Cache
+client/.eslintcache
+client/.parcel-cache/
+client/.vite/
+client/.turbo/
+
+# ==========================================
+# Server (Backend) Specific
+# ==========================================
+# Dependencies
+server/node_modules/
+
+# Runtime Data, Logs, and Process IDs
+server/logs/
+server/*.log
+server/npm-debug.log*
+server/yarn-debug.log*
+server/pnpm-debug.log*
+server/pids/
+server/*.pid
+server/*.seed
+server/*.pid.lock
+
+# Testing / Code Coverage Outputs
+server/coverage/
+server/.nyc_output/
+
+# TypeScript tracking info (if applicable)
+server/*.tsbuildinfo
+
+# ==========================================
+# CRITICAL SECURITY: Environment Variables
+# ==========================================
+# Blocks secrets, database URIs, and JWT keys from leaking to GitHub
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+client/.env*.local
+server/.env*.local
+server/.env
+
+# ==========================================
+# IDE / Text Editors (Optional but recommended)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
